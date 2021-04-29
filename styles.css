@@ -4,12 +4,12 @@
 
     --gray-50: rgb(238,238,238);
     --blue-200: rgb(0, 81, 255);
+    --blue-400: rgb(0, 53,88);
     --blue-500: rgb(0, 0, 92);
 }
 
 * {
     margin:0;
-    padding:0;
     box-sizing: content-box;
     font-family: "Nunito", sans-serif;
 }
@@ -19,6 +19,35 @@ body {
     height: 100%;
 }
 
+a.button {
+    padding: 4px 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/*TITLES ============================== */
+
+h2 {
+
+    margin: 20px 0 10px 40px;
+    color: var(--blue-400);
+}
+
+/*SCREEN-READER ============================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
 /*TOPBAR ============================== */
 
 #topbar {
@@ -29,51 +58,15 @@ body {
     justify-content: space-between;
 }
 
-#change-subject-and-img {
-
-    margin-left: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #loupe {
     margin-left: 20px;
     cursor: pointer;
 
 }
-#change-subject {
-
-    background-color: var(--gray-50);
-    padding: 7px 16px 7px 5px;
-    border-radius: 20px;
-    
-}
-
-#button-em {
-    background-color: var(--blue-500);
-    color: white;
-    padding: 2px 25px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 30px;
-}
-
-#button-ru {
-    margin-left: 5px;
-    text-decoration: none;
-    color: black;
-    opacity: 0.5;
-}
 
 #button-login {
     margin-right: 30px;
-    padding: 4px 20px;
-    border: solid;
-    border-width: 1px;
-    border-radius: 20px;
     color: var(--blue-200);
-    text-decoration: none;
     border-color: var(--blue-200);
 }
 
@@ -82,13 +75,176 @@ body {
     color: white;
 }
 
+#change-subject-and-img {
+
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*CHANGE-SUBJECT ============================== */
+
+div.em#change-subject {
+
+    background-color: var(--gray-50);
+    padding: 7px 16px 7px 5px;
+    border-radius: 20px;
+}
+
+div.em #button-em {
+
+    background-color: var(--blue-500);
+    color: white;
+    padding: 2px 23.5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+div.em #button-ru {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+
+div.ru#change-subject {
+
+    background-color: var(--gray-50);
+    padding: 7px 5px 7px 16px;
+    border-radius: 20px;
+    
+}
+
+div.ru #button-em {
+    
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+div.ru #button-ru {
+    
+    background-color: var(--blue-500);
+    color: white;
+    padding: 2px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+
+
 /*CARD ============================== */
 
+.card {
+
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
 /*CARD JUBIALUNO ============================== */
 
-/*CARD JUBICALOURO ============================== */
+.card.jubialuno {
 
+    margin-top: 20px;
+    background-image: linear-gradient(187deg, rgb(28, 93, 203),rgb(2, 177, 214));
+    height: 180px;
+    margin-top: 30px;
+    border-radius: 20px;
+
+}
+
+.card.jubialuno #text {
+
+    padding: 0 40px;
+    width: 70%;
+    text-align: justify;
+}
+
+.card.jubialuno #text div {
+    display: grid;
+    justify-content: center;
+}
+
+.card.jubialuno #text h3 {
+
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card.jubialuno #text p {
+
+    margin-top: 10px;
+    color: white;
+    font-size: 87.5%;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.card.jubialuno #text ul {
+
+    margin-top: 10px;
+    color: white;
+}
+
+.card.jubialuno #buttons {
+
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 40px 0px;
+    background-color: rgba(0, 0, 255, 0.1);
+    border-radius: 0 20px 20px 0;
+}
+
+.card.jubialuno #buttons :first-child {
+
+    background-color: rgb(0, 197, 230);
+    color: white;
+    border: none;
+}
+
+.card.jubialuno #buttons :last-child {
+
+    border: solid 1.5px white;
+    color: white;
+    text-align: center;
+}
+
+/*TITULO CURSOS ============================== */
+
+#cursos div {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    width: 97.5%;
+    margin: 30px 0 20px;
+}
+
+#cursos div h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#cursos div a {
+
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blue-400);
+}
 /*CARD CURSOS ============================== */
+
+
 
 /*CARD AGENDA ============================== */
 

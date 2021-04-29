@@ -14,34 +14,52 @@
 <body>
     <header id="topbar">
         <div id="change-subject-and-img">
-            <div id="change-subject">
-                <a id="button-em" href="#">Ensino médio</a>
-                <a id="button-ru" href="#">Ref. Universitário</a>
+            <div id="change-subject" class="em">
+                <a onclick="Modal.em()" id="button-em" href="#">Ensino médio</a>
+                <a onclick="Modal.ru()" id="button-ru" href="#">Ref. Universitário</a>
             </div>
             <img class="icon" id="loupe" src="./assets/loupe.svg" alt="Pesquisar">
         </div>
-        <a id="button-login" href="#">FAZER LOGIN</a>
+        <a id="button-login" class="button" href="#">FAZER LOGIN</a>
     </header>
     <main>
         <section id="jubialuno">
-            <h2 class= "sr-only">Torne-se um Jubialuno</h2>
+            <h2 class="sr-only">Torne-se um Jubialuno</h2>
             <div class="card jubialuno">
-                <h3>AINDA NÃO É UM JUBIALUNO?</h3>
-                <p>Faça o seu cadastro agora e experimente gratuitamente por 7 dias:</p>
-                <ul>
-                    <li>Videoaulas gratuitas de todas as disciplinas</li>
-                    <li>O primeiro plano de estudo completo de  qualquer curso</li>
-                    <li>E muito mais!</li>
-                </ul>
+                <div id="text">
+                    <h3>AINDA NÃO É UM JUBIALUNO?</h3>
+                    <div>
+                        <p>Faça o seu cadastro agora e experimente gratuitamente por 7 dias:</p>
+                        <ul>
+                            <li>Videoaulas gratuitas de todas as disciplinas</li>
+                            <li>O primeiro plano de estudo completo de <b>qualquer curso</b></li>
+                            <li>E muito mais!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="buttons">
+                    <a class="button" href="#">EXPERIMENTE GRÁTIS</a>
+                    <a class="button" href="#">JÁ SOU JUBIALUNO</a>
+                </div>
             </div>
         </section>
-        <section id="jubicalouros">
-            <h2>Jubicalouros!</h2>
+        <section id="cursos">
+            <div>
+                <h2>Cursos</h2>
+                <a href="#">Ver todos</a>
+            </div>
+        </section>
+        <section id="agenda">
+            <h2>Agenda</h2>
+        </section>
+        <section id="novas-videoaulas">
+            <h2>Videoaulas mais recentes</h2>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
