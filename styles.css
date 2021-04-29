@@ -1,0 +1,99 @@
+/*GLOBAL ============================== */
+
+:root {
+
+    --gray-50: rgb(238,238,238);
+    --blue-200: rgb(0, 81, 255);
+    --blue-500: rgb(0, 0, 92);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    background-color: var(--gray-50);
+    height: 100%;
+}
+
+/*TOPBAR ============================== */
+
+#topbar {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#change-subject-and-img {
+
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#loupe {
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+#change-subject {
+
+    background-color: var(--gray-50);
+    padding: 7px 16px 7px 5px;
+    border-radius: 20px;
+    
+}
+
+#button-em {
+    background-color: var(--blue-500);
+    color: white;
+    padding: 2px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+#button-ru {
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+}
+
+#button-login {
+    margin-right: 30px;
+    padding: 4px 20px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    color: var(--blue-200);
+    text-decoration: none;
+    border-color: var(--blue-200);
+}
+
+#button-login:hover {
+    background-color: var(--blue-200);
+    color: white;
+}
+
+/*CARD ============================== */
+
+/*CARD JUBIALUNO ============================== */
+
+/*CARD JUBICALOURO ============================== */
+
+/*CARD CURSOS ============================== */
+
+/*CARD AGENDA ============================== */
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
