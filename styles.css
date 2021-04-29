@@ -2,6 +2,7 @@
 
 :root {
 
+    --gray-25: rgb(230, 230, 230);
     --gray-50: rgb(238,238,238);
     --blue-200: rgb(0, 81, 255);
     --blue-400: rgb(0, 53,88);
@@ -145,8 +146,7 @@ div.ru #button-ru {
     background-color: white;
     width: 95%;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
+    border-radius: 20px;
 
 }
 /*CARD JUBIALUNO ============================== */
@@ -154,10 +154,11 @@ div.ru #button-ru {
 .card.jubialuno {
 
     margin-top: 20px;
-    background-image: linear-gradient(187deg, rgb(28, 93, 203),rgb(2, 177, 214));
+    background-image: linear-gradient(to bottom, rgb(28, 93, 203),rgb(2, 177, 214));
     height: 180px;
     margin-top: 30px;
-    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
 
 }
 
@@ -222,7 +223,8 @@ div.ru #button-ru {
 
 /*TITULO CURSOS ============================== */
 
-#cursos div {
+#cursos div:first-child {
+    
     display: flex;
     align-items: center;
 
@@ -244,7 +246,38 @@ div.ru #button-ru {
 }
 /*CARD CURSOS ============================== */
 
+.card.cursos {
 
+    background-color: var(--gray-25);
+    height: 160px;
+    display: grid;
+    align-items: center;
+    padding: 10px;
+}
+
+.card.cursos h3 {
+    color: gray;
+    opacity: 0.7;
+    font-size: 1.1rem;
+}
+
+.card.cursos p {
+    color: black;
+    opacity: 0.7;
+    font-size: 0.95rem;
+}
+
+.card.cursos #see-all {
+    
+    background-color: var(--blue-200);
+    color: white;
+    font-weight: normal;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    width: 12%;
+    text-align: center;
+}
 
 /*CARD AGENDA ============================== */
 
