@@ -11,27 +11,33 @@
 
 * {
     margin:0;
-    box-sizing: content-box;
+    box-sizing: border-box;
     font-family: "Nunito", sans-serif;
 }
 
 body {
     
     display: flex;
-    background-color: red;
     height: 100vh;
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+
 #hamburger {
     height: 100vh;
-    width: 17%;
+    width: 220px;
     background-color: white;
     overflow: auto;
 
 }
 
 #content {
-    width: 83%;
+    
+    width: 100%;
     height: 100vh;
     overflow: auto;
     background-color: var(--gray-50);
@@ -45,6 +51,25 @@ a.button {
     text-decoration: none;
 }
 
+/*SCROLLBAR ============================== */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--gray-25);
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(155, 155, 155, 0.5);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(155, 155, 155, 0.8);
+  }
 /*TITLES ============================== */
 
 h2 {
@@ -161,7 +186,6 @@ div.ru #button-ru {
 }
 #hamburger #logo {
     margin-top: 1rem;
-    
 }
 
 
@@ -184,33 +208,162 @@ div.ru #button-ru {
     display: flex;
     align-items: center;
     margin-left: 15px;
+    margin-bottom: 1.1rem;
 }
 
-.subject img {
+
+
+#subjects img {
 
     width: 20px;
     opacity: 0.5;
     margin-right: 1rem;
 }
 
-.subject a {
+#end img {
+    width: 20px;
+    opacity: 0.5;
+    margin-right: 1rem;
+}
+
+#hamburger a {
     text-decoration: none;
     color: black;
     opacity: 0.6;
 }
 
-.subject.biology {
+/*SUBJECTS ============================== */
 
-    margin-bottom: 1.4rem;
-}
-.subject.biology:hover {
+.subject:hover {
 
     cursor: pointer;
     opacity: 1;
+}
+
+.subject.biology:hover {
+
+    filter: invert(14%) sepia(99%) saturate(3651%) hue-rotate(224deg) brightness(85%) contrast(106%);
+}
+
+.subject.physics:hover {
+
+    filter: invert(52%) sepia(59%) saturate(528%) hue-rotate(97deg) brightness(98%) contrast(93%);
+}
+
+.subject.chemistry:hover {
+
+    filter: invert(10%) sepia(76%) saturate(6177%) hue-rotate(358deg) brightness(80%) contrast(110%);
+
+}
+
+.subject.math:hover {
+
     filter: invert(14%) sepia(99%) saturate(3651%) hue-rotate(224deg) brightness(85%) contrast(106%);
 
 }
 
+.subject.history:hover {
+
+    filter: invert(20%) sepia(15%) saturate(4133%) hue-rotate(325deg) brightness(92%) contrast(94%);}
+
+.subject.geography:hover {
+
+    filter: invert(52%) sepia(59%) saturate(528%) hue-rotate(97deg) brightness(98%) contrast(93%);
+}
+
+.subject.philosophy:hover {
+
+    filter: invert(50%) sepia(70%) saturate(428%) hue-rotate(22deg) brightness(98%) contrast(91%);
+}
+
+.subject.sociology:hover {
+
+    filter: invert(10%) sepia(76%) saturate(6177%) hue-rotate(358deg) brightness(80%) contrast(110%);
+}
+
+.subject.portuguese:hover {
+
+    filter: invert(42%) sepia(99%) saturate(370%) hue-rotate(359deg) brightness(94%) contrast(85%);
+
+}
+
+.subject.literature:hover {
+
+    filter: invert(42%) sepia(99%) saturate(370%) hue-rotate(359deg) brightness(94%) contrast(85%);
+
+}
+
+.subject.redacao:hover {
+
+    filter: invert(14%) sepia(99%) saturate(3651%) hue-rotate(224deg) brightness(85%) contrast(106%);
+}
+
+.subject.english:hover {
+
+    filter: invert(14%) sepia(99%) saturate(3651%) hue-rotate(224deg) brightness(85%) contrast(106%);
+}
+
+.subject.spanish:hover {
+
+    filter: invert(52%) sepia(95%) saturate(337%) hue-rotate(33deg) brightness(97%) contrast(91%);
+
+}
+
+.subject.interdisciplinar:hover {
+
+    filter: invert(54%) sepia(40%) saturate(727%) hue-rotate(134deg) brightness(92%) contrast(93%);
+
+}
+
+.subject.lives:hover {
+
+    filter: invert(50%) sepia(70%) saturate(428%) hue-rotate(22deg) brightness(98%) contrast(91%);
+
+}
+
+.subject.comunidade:hover {
+
+    filter: invert(24%) sepia(78%) saturate(474%) hue-rotate(344deg) brightness(95%) contrast(92%);
+
+}
+
+/*END ============================== */
+
+hr {
+    width: 90%;
+    margin: auto;
+    opacity: 0.5;
+}
+#end .star {
+
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+    
+} 
+
+#blog {
+    display: grid;
+    margin-left: 20px;
+    margin-top: 1.1rem;
+
+}
+
+#blog a {
+    
+    font-size: 87.5%;
+    margin-bottom: 1.1rem;
+}
+
+#blog a:hover {
+    opacity: 1;
+}
+
+#blog :first-child {
+    color: var(--blue-200);
+}
 
 /*CARD ============================== */
 
@@ -226,7 +379,6 @@ div.ru #button-ru {
 
 .card.jubialuno {
 
-    margin-top: 20px;
     background-image: linear-gradient(to bottom, rgb(28, 93, 203),rgb(2, 177, 214));
     height: 180px;
     margin-top: 30px;
@@ -274,10 +426,11 @@ div.ru #button-ru {
     display:grid;
     align-items: center;
     justify-content: center;
-    width: 35%;
+    width: 30%;
     padding: 40px 20px;
     background-color: rgba(0, 0, 255, 0.075);
     border-radius: 0 20px 20px 0;
+    font-size: 87.5%;
 }
 
 .card.jubialuno #buttons :first-child {
@@ -334,6 +487,7 @@ div.ru #button-ru {
     display: grid;
     align-items: center;
     padding: 10px;
+    width: 95%;
 }
 
 .card.cursos h3 {
@@ -356,14 +510,68 @@ div.ru #button-ru {
     padding: 5px;
     border-radius: 20px;
     border: none;
-    width: 12%;
+    width: 15%;
     text-align: center;
 }
 
 /*CARD AGENDA ============================== */
 
-.icon {
-    width: 20px;
-    height: 20px;
+.card.agenda {
+    display: flex;
 }
 
+#calendar {
+    padding: 1rem;
+    font-size: 90%;
+    width: 60%;
+    height: 40rem;
+    text-align: center;
+}
+
+#calendar #month {
+    padding-bottom: 1rem;
+    opacity: 0.7;
+}
+
+#days-content {
+
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+#days-content div {
+
+    padding: 1rem;
+    height: 100%;
+}
+
+#days-content div:hover {
+
+    background-color: var(--gray-50);
+    cursor: pointer;
+}
+
+#events {
+
+    padding: 1rem;
+    text-align: start;
+}
+
+#events h3 {
+    opacity: 0.6;
+}
+#events p {
+    opacity: 0.4;
+}
+
+.icon.arrow {
+
+    margin-top: 1.5rem;
+}
