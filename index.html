@@ -12,58 +12,145 @@
 </head>
 
 <body>
-    <header id="topbar">
-        <div id="change-subject-and-img">
-            <div id="change-subject" class="em">
-                <a onclick="Modal.em()" id="button-em" href="#">Ensino médio</a>
-                <a onclick="Modal.ru()" id="button-ru" href="#">Ref. Universitário</a>
-            </div>
-            <img class="icon" id="loupe" src="./assets/loupe.svg" alt="Pesquisar">
+    <div id="hamburger">
+        <div id="logodiv">
+            <img id="logo" src="./assets/logoBT.png" alt="Logo Biologia Total">
         </div>
-        <a id="button-login" class="button" href="#">FAZER LOGIN</a>
-    </header>
-    <main>
-        <section id="jubialuno">
-            <h2 class="sr-only">Torne-se um Jubialuno</h2>
-            <div class="card jubialuno">
-                <div id="text">
-                    <h3>AINDA NÃO É UM JUBIALUNO?</h3>
-                    <div>
-                        <p>Faça o seu cadastro agora e experimente gratuitamente por 7 dias:</p>
-                        <ul>
-                            <li>Videoaulas gratuitas de todas as disciplinas</li>
-                            <li>O primeiro plano de estudo completo de <b>qualquer curso</b></li>
-                            <li>E muito mais!</li>
-                        </ul>
+        <img id="closeH" width="20px" src="./assets/closeH.svg" alt="Sair do site">
+        <div id="subjects">
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+            <div class="subject biology">
+                <img src="./assets/biologia.svg" alt="Biologia">
+
+                <a href="#">Biologia</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="content">
+        <header id="topbar">
+            <div id="change-subject-and-img">
+                <div id="change-subject" class="em">
+                    <a onclick="Modal.em()" id="button-em" href="#">Ensino médio</a>
+                    <a onclick="Modal.ru()" id="button-ru" href="#">Ref. Universitário</a>
+                </div>
+                <img class="icon" id="loupe" src="./assets/loupe.svg" alt="Pesquisar">
+            </div>
+            <a id="button-login" class="button" href="#">FAZER LOGIN</a>
+        </header>
+        <main>
+            <section id="jubialuno">
+                <h2 class="sr-only">Torne-se um Jubialuno</h2>
+                <div class="card jubialuno">
+                    <div id="text">
+                        <h3>AINDA NÃO É UM JUBIALUNO?</h3>
+                        <div>
+                            <p>Faça o seu cadastro agora e experimente gratuitamente por 7 dias:</p>
+                            <ul>
+                                <li>Videoaulas gratuitas de todas as disciplinas</li>
+                                <li>O primeiro plano de estudo completo de <b>qualquer curso</b></li>
+                                <li>E muito mais!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="buttons">
+                        <a class="button" href="#">EXPERIMENTE GRÁTIS</a>
+                        <a class="button" href="#">JÁ SOU JUBIALUNO</a>
                     </div>
                 </div>
-                <div id="buttons">
-                    <a class="button" href="#">EXPERIMENTE GRÁTIS</a>
-                    <a class="button" href="#">JÁ SOU JUBIALUNO</a>
+            </section>
+            <section id="cursos">
+                <div id="title">
+                    <h2>Cursos</h2>
+                    <a href="#">Ver todos</a>
                 </div>
-            </div>
-        </section>
-        <section id="cursos">
-            <div id="title">
-                <h2>Cursos</h2>
-                <a href="#">Ver todos</a>
-            </div>
-            <div class="card cursos">
-                <h3>Explore nossos cursos e descubra o melhor para você!</h3>
-                <p>Aqui no Biologia Total temos vários cursos para você fazer e estudar tranquilo enquanto nós cuidamos do plano de estudo pra você!</p>
-                <a href="#" id="see-all">VER TODOS</a>
-            </div>
-        </section>
-        <section id="agenda">
-            <h2>Agenda</h2>
-        </section>
-        <section id="novas-videoaulas">
-            <h2>Videoaulas mais recentes</h2>
-        </section>
-    </main>
-    <footer>
+                <div class="card cursos">
+                    <h3>Explore nossos cursos e descubra o melhor para você!</h3>
+                    <p>Aqui no Biologia Total temos vários cursos para você fazer e estudar tranquilo enquanto nós
+                        cuidamos do plano de estudo pra você!</p>
+                    <a href="#" id="see-all">VER TODOS</a>
+                </div>
+            </section>
+            <section id="agenda">
+                <h2>Agenda</h2>
+            </section>
+            <section id="novas-videoaulas">
+                <h2>Videoaulas mais recentes</h2>
+            </section>
+        </main>
+        <footer>
+            <h1>OI</h1>
+            <h1>OI</h1>
+            <h1>OI</h1>
+            <h1>OI</h1>
+        </footer>
+    </div>
 
-    </footer>
     <script src="script.js"></script>
 </body>
 
