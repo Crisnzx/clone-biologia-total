@@ -21,10 +21,7 @@ body {
     height: 100vh;
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-}
+
 
 
 #hamburger {
@@ -99,6 +96,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 #loupe {
@@ -215,13 +213,12 @@ div.ru #button-ru {
 
 #subjects img {
 
-    width: 20px;
     opacity: 0.5;
     margin-right: 1rem;
 }
 
 #end img {
-    width: 20px;
+    
     opacity: 0.5;
     margin-right: 1rem;
 }
@@ -520,11 +517,13 @@ hr {
     display: flex;
 }
 
+/*CALENDÁRIO ============================== */
+
 #calendar {
     padding: 1rem;
     font-size: 90%;
     width: 60%;
-    height: 40rem;
+    height: 35rem;
     text-align: center;
 }
 
@@ -535,16 +534,16 @@ hr {
 
 #days-content {
 
+    
     border-top: solid;
     border-bottom: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.2);
     height: 18rem;
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: 0.5fr repeat(7, 1fr) 0.5fr;
+    
 }
-
 
 #days-content div {
 
@@ -571,7 +570,131 @@ hr {
     opacity: 0.4;
 }
 
-.icon.arrow {
+.arrow {
 
-    margin-top: 1.5rem;
+    
+    margin: 1.5rem auto;
 }
+
+/*DESCRIÇÃO ============================== */
+
+#description {
+
+    width: 40%;
+    padding: 5rem 3rem;
+    display: grid;
+    text-align: justify;
+    
+}
+
+#description img {
+
+    margin: 0 auto 2rem;
+
+}
+
+#description h3 {
+
+    opacity: 0.5;
+    font-size: 100%;
+ 
+}
+
+#description p {
+    margin-top: 1rem;
+}
+
+/*VIDEOAULAS MAIS RECENTES ============================== */
+
+#all-cards {
+
+    display: flex;
+    margin-bottom: 2rem;
+    
+    overflow: auto;
+}
+
+.card2 {
+    width: 350px;
+    background-color: white;
+    border-radius: 20px;
+    height: 350px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.card2 .subject {
+
+    text-align: center;
+    margin-left: auto;
+    font-size: 75%;
+    width: 80px;
+    color: white;
+    border-radius: 1rem;
+    
+}
+
+.card2 .subject.geography {
+
+    background-color: rgb(26, 179, 26);
+
+}
+
+.card2 .subject.portuguese {
+    background-color: rgb(255, 106, 64);
+
+}
+
+.card2 .subject.spanish {
+    background-color: rgb(142, 168, 47);
+
+}
+
+.card2 .subject.history {
+    background-color: rgb(172, 102, 78);
+
+}
+
+.card2 .subject.literature {
+    background-color: rgb(247, 128, 154);
+
+}
+
+.card2.new-classes .thumbnail {
+
+    
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card2.new-classes div {
+
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.card2.new-classes .time {
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+
+.card2.new-classes div img {
+    margin-right: 1rem;
+}
+
+.card2.new-classes .teacher {
+
+    opacity: 0.5;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+
+
+
